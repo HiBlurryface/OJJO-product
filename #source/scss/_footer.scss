@@ -1,0 +1,165 @@
+// footer 
+.footer {
+    &__row {
+        &:first-child {
+            padding: 80px 0 60px;
+            border-bottom: 1px solid #333333;
+        }
+        &:last-child {
+            padding: 20px 0;
+        }
+        @media (max-width: 1200px) {
+            &:first-child .footer__content {
+                flex-wrap: wrap;
+                max-width: 600px;
+                margin: 0px auto;
+            }
+        }
+        @media (max-width: 1024px) {
+            &:last-child .footer__content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 600px) {
+            &:first-child .footer__content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 100%;
+        @media (max-width: 1200px) {
+            &:first-child {
+                padding-bottom: 40px;
+            }
+        }
+        @media (min-width: 601px) {
+            max-width: 255px;
+            &:not(:last-child) {
+                padding-bottom: 40px;
+            }
+        }
+        @media (max-width: 600px) {
+            &:not(:last-child) {
+                padding-bottom: 40px;
+            }
+        }
+        &-title {
+            font-family: $Gilr;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #333333;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        & .links {
+            &__menu {
+                &-item {
+                    padding-bottom: 15px;
+                }
+                &-link {
+                    font-family: $Gilr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #333333;
+                }
+            }
+        }
+        & .pay {
+            &__text {
+                    font-family: $Gilr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #333333;
+                }
+            &__icons {
+                display: flex;
+                padding-top: 20px;
+                &-img {
+                    display: block;
+                    &:first-child {
+                        padding-right: 20px;
+                    }
+                }
+            }  
+        }
+        & .contacts {
+            &__cell {
+                display: flex;
+                align-items: start;
+                &:not(:last-child) {
+                    padding-bottom: 14px;
+                } 
+                &-img {
+                    padding-right: 20px;
+                }
+                &-phone {
+                    font-family: $Gilr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #333333;
+                }
+            }
+        }
+        & .socials {
+            &__text {
+                font-family: $Gilr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 150%;
+                color: #333333;
+            }
+            &__site {
+                padding-top: 20px;
+                display: flex;
+                &-link {
+                    color: #333333;
+                    &:not(:last-child) {
+                        margin-right: 22px;
+                    }
+                    & i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &__copyright, &__link, &__made {
+        font-family: $Gilr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #333333;
+    }
+    &__made {
+        font-weight: 600;
+        text-decoration: underline;
+        @media (max-width: 1024px) {
+            padding-top: 10px;
+        }
+    }
+    &__link {
+        @media (max-width: 1024px) {
+            padding-top: 10px;
+        }
+    }
+}
